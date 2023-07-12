@@ -10,17 +10,16 @@ Due to limited RAM on local computer, the training model is running on Colab.
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles
 # Terrain Type
 We want to identify 8 types of terrain. Here is the list. The corresponding color codes are:
-|             | Hex     | RGB         | Label |
-|-------------|---------|-------------|-------|
-| background  | #050505 | 5, 5, 5     |   0   |
-| littlebrick | #e7e025 |             |   1   |
-| bigbrick    | #1b1b9a | 154, 27, 27 |   2   |
-| littleStone | #2ebbde |             |   3   |
-| bigStone    | #883808 |             |   4   |
-| stair       | #0b8808 | 8, 136, 11  |   5   |
-| asphalt     | #d4aaff |             |   6   |
-| other       | #464546 | 70, 69, 70  |   7   |
+|             | RGB         | Label |
+|-------------|-------------|-------|
+| background  | 5, 5, 5     |   0   |
+| littlebrick | 222, 187, 46|   1   |
+| bigbrick    | 154, 27, 27 |   2   |
+| littleStone | 37, 224, 231|   3   |
+| bigStone    | 8, 56, 136  |   4   |
+| stair       | 8, 136, 11  |   5   |
+| asphalt     |             |   6   |
+| other       | 70, 69, 70  |   7   |
 
-Here may be a bug in OpenCV library. Hex: #1b1b9a should be blue RGB:(27,27,154). But OpenCv considers it as RGB(154, 27, 27) which is actually supposed to be red. Here we will follow the definition in OpenCV.
 
 The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use image with pixel value larger than 7, you will get an error: target ** is out of bounds.
