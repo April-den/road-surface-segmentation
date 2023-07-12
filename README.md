@@ -22,4 +22,5 @@ We want to identify 8 types of terrain. Here is the list. The corresponding colo
 | other       | #464546 | 70, 69, 70  |   7   |
 
 Here may be a bug in OpenCV library. Hex: #1b1b9a should be blue RGB:(27,27,154). But OpenCv considers it as RGB(154, 27, 27) which is actually supposed to be red. Here we will follow the definition in OpenCV.
-The label is represent by pixel values of gray image (mask) shown in folder: label. 
+
+The label is represented by pixel values of gray image (mask) shown in folder: label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use image with pixel value larger than 7, you will get an error: target ** is out of bounds.
