@@ -10,15 +10,16 @@ Due to limited RAM on local computer, the training model is running on Colab.
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles
 # Terrain Type
 We want to identify 8 types of terrain. Here is the list. The corresponding color codes are:
-|             | Hex     | RGB         |
-|-------------|---------|-------------|
-| background  | #050505 | 5, 5, 5     |
-| littlebrick | #e7e025 |             |
-| bigbrick    | #1b1b9a | 154, 27, 27 |
-| littleStone | #2ebbde |             |
-| bigStone    | #883808 |             |
-| stair       | #0b8808 | 8, 136, 11  |
-| asphalt     | #d4aaff |             |
-| other       | #464546 | 70, 69, 70  |
+|             | Hex     | RGB         | Label |
+|-------------|---------|-------------|-------|
+| background  | #050505 | 5, 5, 5     |   0   |
+| littlebrick | #e7e025 |             |   1   |
+| bigbrick    | #1b1b9a | 154, 27, 27 |   2   |
+| littleStone | #2ebbde |             |   3   |
+| bigStone    | #883808 |             |   4   |
+| stair       | #0b8808 | 8, 136, 11  |   5   |
+| asphalt     | #d4aaff |             |   6   |
+| other       | #464546 | 70, 69, 70  |   7   |
 
-Here may be a bug in OpenCV library. Hex: #1b1b9a should be blue RGB:(27,27,154). But OpenCv considers it as RGB(154, 27, 27) which is actually supposed to be red. Here we will follow the definition in OpenCV
+Here may be a bug in OpenCV library. Hex: #1b1b9a should be blue RGB:(27,27,154). But OpenCv considers it as RGB(154, 27, 27) which is actually supposed to be red. Here we will follow the definition in OpenCV.
+The label is represent by pixel values of gray image (mask) shown in folder: label. 
