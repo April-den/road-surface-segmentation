@@ -1,0 +1,8 @@
+background
+littlebrick
+bigbrick
+little stone
+big stone
+stair
+Asphalt
+other
