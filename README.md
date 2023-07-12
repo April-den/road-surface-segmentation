@@ -19,4 +19,3 @@ We want to identify 8 types of terrain. Here is the list. The corresponding colo
 | other       | #464546 | 70, 69, 70  |
 
 Here may be a bug in OpenCV library. Hex: #1b1b9a should be blue RGB:(27,27,154). But OpenCv considers it as RGB(154, 27, 27) which is actually supposed to be red. Here we will follow the definition in OpenCV
-littleStone#2ebbde
