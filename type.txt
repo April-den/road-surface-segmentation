@@ -4,5 +4,5 @@ bigbrick
 little stone
 big stone
 stair
-Asphalt
+asphalt
 other
