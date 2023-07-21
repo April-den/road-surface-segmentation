@@ -18,7 +18,7 @@ We want to identify 8 types of terrain. Here is the list. The corresponding colo
 | littleStone | 37, 224, 231|   3   |
 | bigStone    | 8, 56, 136  |   4   |
 | stair       | 8, 136, 11  |   5   |
-| asphalt     |             |   6   |
+| asphalt     | 255,170,212 |   6   |
 | other       | 70, 69, 70  |   7   |
 
 
