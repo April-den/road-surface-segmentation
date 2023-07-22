@@ -9,6 +9,8 @@ Due to limited RAM on local computer, the training model is running on Colab.
 # Dataset
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles.
 ## RGB Dataset
+<!-- tree start -->
+<!-- tree end -->
 RGB Dataset
 │   type.txt
 │   valid.txt
