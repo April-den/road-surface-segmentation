@@ -11,8 +11,8 @@ Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense 
 ## RGB Dataset
 ```bash
 RGB Dataset
-├── type.txt
 ├── valid.txt
+├── type.txt
 ├── label
 |   ├── 100_l.png
 |   ├── 101_l.png
@@ -27,9 +27,8 @@ RGB Dataset
     └───...
 ```
 We manually labeled different terrains in pictures. The number of these labeled pictures is 295. 70% of them(206) are used for training and 30% of them(89) are used for validation. Pictures for validation are randomly chosen and listed in [valid.txt](https://github.com/April-den/road-surface-segmentation/blob/main/valid.txt).
-## Point Cloud Dataset
-# Terrain Type
-We want to identify 8 types of terrain. Here is the list. The corresponding color codes are:
+## Terrain Type
+We want to identify [8 types of terrain](https://github.com/April-den/road-surface-segmentation/blob/main/type.txt). Here is the list. The corresponding color codes are:
 |             | RGB         | Label |
 |-------------|-------------|-------|
 | background  | 5, 5, 5     |   0   |
@@ -43,6 +42,8 @@ We want to identify 8 types of terrain. Here is the list. The corresponding colo
 
 
 The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use image with pixel value larger than 7, you will get an error: target ** is out of bounds.
+## Point Cloud Dataset
+
 # RGB Segmentation Training Model
 
 # Point Cloud Segmentation
