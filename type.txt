@@ -1,8 +1,8 @@
 background
-littlebrick
-bigbrick
-little stone
-big stone
+littleBrick
+bigBrick
+littleStone
+bigStone
 stair
 asphalt
 other
