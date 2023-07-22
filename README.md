@@ -11,31 +11,6 @@ Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense 
 ## RGB Dataset
 <!-- tree start -->
 <!-- tree end -->
-RGB Dataset
-│   type.txt
-│   valid.txt
-│
-├───label
-│       100_l.png
-│       101_l.png
-│       102_l.png
-│       103_l.png
-│       104_l.png
-│       105_l.png
-│       9_l.png
-|       ...
-│
-└───origin
-        1.png
-        10.png
-        100.png
-        101.png
-        102.png
-        103.png
-        104.png
-        105.png
-        106.png
-        ...
 We manually labeled different terrains in pictures. The number of these labeled pictures is 295. 70% of them(206) are used for training and 30% of them(89) are used for validation. Pictures for validation are randomly chosen and listed in [valid.txt](https://github.com/April-den/road-surface-segmentation/blob/main/valid.txt).
 ## Point Cloud Dataset
 # Terrain Type
