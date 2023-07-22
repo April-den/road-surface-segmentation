@@ -10,7 +10,7 @@ Due to limited RAM on local computer, the training model is running on Colab.
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles.
 ## RGB Dataset
 ```bash
-RGB Dataset
+.
 ├── valid.txt
 ├── type.txt
 ├── label
@@ -41,7 +41,7 @@ We want to identify 8 types of terrain. They are listed in [type.txt](https://gi
 | other       | 70, 69, 70  |   7   |
 
 
-The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use image with pixel value larger than 7, you will get an error: target ** is out of bounds.
+The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use an image with the pixel value larger than 7, you will get an error: target ** is out of bounds.
 ## Point Cloud Dataset
 
 # RGB Segmentation Training Model
