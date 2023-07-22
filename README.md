@@ -26,3 +26,6 @@ We want to identify 8 types of terrain. Here is the list. The corresponding colo
 
 
 The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use image with pixel value larger than 7, you will get an error: target ** is out of bounds.
+# RGB Segmentation Training Model
+
+# Point Cloud Segmentation
