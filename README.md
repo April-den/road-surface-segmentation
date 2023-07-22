@@ -9,10 +9,23 @@ Due to limited RAM on local computer, the training model is running on Colab.
 # Dataset
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles.
 ## RGB Dataset
-""" bash
-└─src
-    └─main
-"""
+```bash
+RGB Dataset
+├── type.txt
+├── valid.txt
+├── label
+|   ├── 100_l.png
+|   ├── 101_l.png
+|   ├── 102_l.png
+|   ├── 103_l.png
+│   └───...
+└── origin
+    ├── 1.png
+    ├── 10.png
+    ├── 100.png
+    ├── 101.png
+    └───...
+```
 We manually labeled different terrains in pictures. The number of these labeled pictures is 295. 70% of them(206) are used for training and 30% of them(89) are used for validation. Pictures for validation are randomly chosen and listed in [valid.txt](https://github.com/April-den/road-surface-segmentation/blob/main/valid.txt).
 ## Point Cloud Dataset
 # Terrain Type
