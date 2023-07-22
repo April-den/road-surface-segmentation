@@ -27,7 +27,7 @@ RGB Dataset
     └───...
 ```
 We manually labeled different terrains in pictures. The number of these labeled pictures is 295. 70% of them(206) are used for training and 30% of them(89) are used for validation. Pictures for validation are randomly chosen and listed in [valid.txt](https://github.com/April-den/road-surface-segmentation/blob/main/valid.txt).
-## Terrain Type
+
 We want to identify [8 types of terrain](https://github.com/April-den/road-surface-segmentation/blob/main/type.txt). Here is the list. The corresponding color codes are:
 |             | RGB         | Label |
 |-------------|-------------|-------|
