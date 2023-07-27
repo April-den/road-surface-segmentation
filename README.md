@@ -8,7 +8,7 @@ fastai 2.7.12 + python 3.10 + torch 2.0.1+cu118
 Due to limited RAM on local computer, the training model is running on Colab.
 # Dataset
 Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense and the camera in a Pupil Invisible Eye Tracker. Pictures shot by eye tracker have a broader perspective and high resolution. The other part is point-cloud which contains depth information on the terrain. We use this information to identify the distance between the exoskeleton user and stairs or obstacles.
-## RGB Dataset
+## 2D RGB Dataset
 ```bash
 .
 ├── valid.txt
@@ -46,4 +46,7 @@ The label is represented by pixel values of gray image (mask) shown in [label fo
 
 # RGB Segmentation Training Model
 
-# Point Cloud Segmentation
+# Point Cloud Processing
+We use depth information of the point cloud to identify 5 extra types of terrain: level road, up and down ramp, and up and down stairs. Stairs can be identified by 2D image segmentation but
+after applying the point cloud, stair identification is more precise, and more distance information is accessible. 
+![image](https://github.com/April-den/road-surface-segmentation/blob/main/terrain%20type.png)
