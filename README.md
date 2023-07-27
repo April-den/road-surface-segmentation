@@ -48,5 +48,7 @@ The label is represented by pixel values of gray image (mask) shown in [label fo
 
 # Point Cloud Processing
 We use depth information of the point cloud to identify 5 extra types of terrain: level road, up and down ramp, and up and down stairs. Stairs can be identified by 2D image segmentation but
-after applying the point cloud, stair identification is more precise, and more distance information is accessible. 
+after applying the point cloud, stair identification is more precise, and more distance information is accessible. The algorithm to make decision is shown below:
 ![image](https://github.com/April-den/road-surface-segmentation/blob/main/terrain%20type.png)
+To avoid the influence of human body variation through walking, we develop strategy for decision making:
+![image](https://github.com/April-den/road-surface-segmentation/blob/main/decision%20strategy.png)
