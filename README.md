@@ -43,7 +43,7 @@ We want to identify 8 types of terrain. They are listed in [type.txt](https://gi
 
 The label is represented by pixel values of gray image (mask) shown in [label folder](https://github.com/April-den/road-surface-segmentation/tree/main/label): label which will be used as the target label in deep learning. That's why the pixel value should be within the range of the number of terrain types. Here we have 8 types, so the labels is within [0, 7]. If you use an image with the pixel value larger than 7, you will get an error: target ** is out of bounds.
 ## Point Cloud Dataset
-The PLY files from 221.ply to 880.ply in this folder correspond one-to-one with the RGB images in the "result" folder, named RGB221 to RGB880 respectively.
+The PLY files from 221.ply to 880.ply in this folder correspond one-to-one with the RGB images in the "result" folder, named RGB221 to RGB880 respectively. Point cloud data are calculated form RGB and depth images. Note: The depth image has been aligned.
 
 # RGB Segmentation Training Model
 
