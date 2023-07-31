@@ -14,16 +14,16 @@ Our datasets contain two parts, ones are RGB pictures shot by Intel® RealSense 
 ├── valid.txt
 ├── type.txt
 ├── label
-|   ├── 100_l.png
-|   ├── 101_l.png
-|   ├── 102_l.png
-|   ├── 103_l.png
+|   ├── 1_l.png
+|   ├── 2_l.png
+|   ├── 3_l.png
+|   ├── 4_l.png
 │   └───...
 └── origin
     ├── 1.png
-    ├── 10.png
-    ├── 100.png
-    ├── 101.png
+    ├── 2.png
+    ├── 3.png
+    ├── 4.png
     └───...
 ```
 We manually labeled different terrains in pictures. The number of these labeled pictures is 295. 70% of them(206) are used for training and 30% of them(89) are used for validation. Pictures for validation are randomly chosen and listed in [valid.txt](https://github.com/April-den/road-surface-segmentation/blob/main/valid.txt).
