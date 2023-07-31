@@ -1,7 +1,7 @@
 ![image](https://github.com/April-den/road-surface-segmentation/blob/main/logo.png)
 
 https://www.kth.se/en/sci/kth-moveability-lab
-# road-surface-segmentation
+# road-surface-segmentation-idification
 This is a project developed by Biomechanics of Human Movements lab in KTH. We want to identify intention of exoskeleton user based on terrain identification, eye gazing and multiple sensors. Here we public our code and dataset related to road surface segmentation based on RGB and point cloud.
 # Install
 fastai 2.7.12 + python 3.10 + torch 2.0.1+cu118
