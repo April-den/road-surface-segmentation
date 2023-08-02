@@ -46,6 +46,7 @@ The label is represented by pixel values of gray image (mask) shown in [label fo
 The [PLY files](https://github.com/April-den/road-surface-segmentation/tree/main/pc) from 221.ply to 880.ply in this folder correspond one-to-one with the RGB images in the "result" folder, named RGB221 to RGB880 respectively. Point cloud data are calculated form RGB and depth images. Note: The depth image has been aligned.
 
 # RGB Segmentation Training Model
+![image](https://github.com/April-den/road-surface-segmentation/blob/main/U-Net%20ResNet34.png)
 
 # Point Cloud Processing
 We use depth information of the point cloud to identify 5 extra types of terrain: level road, up and down ramp, and up and down stairs. Stairs can be identified by 2D image segmentation but
