@@ -49,8 +49,16 @@ The [PLY files](https://github.com/April-den/road-surface-segmentation/tree/main
 ![image](https://github.com/April-den/road-surface-segmentation/blob/main/U-Net%20ResNet34.png)
 
 # Point Cloud Processing
+|             | Label |
+|-------------|-------|
+| Level Road  |   1   |
+| Up Ramp     |   2   |
+| Down Ramp   |   3   |
+| Up Stair    |   4   |
+| Down Stair  |   5   |
+
 We use depth information of the point cloud to identify 5 extra types of terrain: level road, up and down ramp, and up and down stairs. Stairs can be identified by 2D image segmentation but
-after applying the point cloud, stair identification is more precise, and more distance information is accessible. The algorithm to make decision is shown below:
+after applying the point cloud, stair identification is more precise, and more distance information is accessible. The algorithm to make a decision is shown below:
 ![image](https://github.com/April-den/road-surface-segmentation/blob/main/terrain%20type.png)
 
 To avoid the influence of human body variation through walking, we develop strategy for decision making:
